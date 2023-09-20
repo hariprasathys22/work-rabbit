@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check out</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!------------------------nav bar---------------->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Peaceful Service</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+               data-bs-target="#navbarSupportedContent"  aria-expanded="false" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link"  href="homelogin.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="homelogin.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="homelogin.html">Contact</a>
+              </li>
+             
+              </ul>
+             <a href="home.html"><button class="btn p-2 my-lg-0 my-2">lOGOUT</button></a>
+        </div>
+      </nav>
+
+
+      
+<form action="mail.php" method="post" >
+    <section id="checkout">
+        <div class="container box">
+            <div class="row">
+<div class="col-lg-6 col-md-6 col-12">
+                  <img src="image/chout.png" class="img-fluid">
+              </div>
+<div class="col-lg-6 col-md-6 col-12">
+    <h1>check out</h1>
+        <div class="form-group">
+            <input type="text" name="fname" class="form-control" placeholder="Enter name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Enter mail" required>
+        </div>
+        <div class="form-group">
+            <input type="tel" name="phone" class="form-control" placeholder="Enter phone number" required>
+        </div>
+       
+        
+        <div class="form-group">
+            <textarea type="text" name="address" class="form-control" row="3" cols="10" placeholder="Enter address" required></textarea>
+        </div>
+        <h6 class="text-center lead">Select payment method</h6>
+        <div class="form-group">
+            <select name="pmode" class="form-control">
+                <option value="">--select payment--</option>
+                <option value="cod">cash on delivery</option>
+            </select>
+            
+        </div>
+        <div class="form-group">
+            <input type="submit" name="submit" class="btn btn-danger btn-block" value="confirm service">
+        </div>
+    </div>
+    </div>
+    </section>
+</form>
+
+
+<!-------------------footer---------->
+
+<footer>copyrights reserved @4kcreation 2021</footer>
+    
+</body>
+</html>

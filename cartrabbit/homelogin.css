@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    background: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(255, 242, 0) !important;
+}
+#navbarSupportedContent a{
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid violet;
+}
+#navbarSupportedContent button{
+    background: rgb(255, 242, 0);
+    width: 5rem;
+}
+
+/*----------------------whole product-----------------*/
+
+#products{
+    background: white;
+    width: 100%;
+    height: 100vh;
+}
+#products h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#products img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 250px;
+    height: 350px;
+    background: rgb(103, 145, 165) !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px rgb(0, 0, 0);
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px;
+    margin-left: 120px;
+    transition: 0.2s;
+    
+}
+.card .h1{
+    font-size: 30px;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+    transition: 0.2s;
+}
+.card .btn{
+    color: rgb(0, 0, 0);
+    background: rgb(164, 158, 41);
+    top: 2rem;
+    border: black;
+}
+.card .btn:hover{
+    background: rgb(187, 187, 20);
+    
+}
+
+/*-----------------------singleproduct----------------*/
+.heading{
+    padding-top: 50px;
+}
+.onepro{
+    padding-top: 50px;
+}
+#product1{
+    background: white;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+#product2{
+    background: white;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+#product3{
+    background: white;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+#product4{
+    background: white;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+#product5{
+    background: white;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+#product6{
+    background: white;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+.heading{
+    font-weight: 800;
+    text-align: center;    
+}
+table{
+    width: 100%;
+    
+    
+}
+.checked{
+    color: orange;
+    
+}
+h2{
+    font-family: sans-serif;
+
+}
+img{
+    height: 60vh;
+}
+span    {
+    font-family: sans-serif;
+    font-weight: 800;
+    text-align: center;
+    
+}
+/*-------------------CART------------------*/
+
+#cart{
+    background: white;
+    width: 100%;
+    min-height: 100vh;
+}
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+/*----------------------------contact------------------*/
+
+#contact img{
+    height: 100%;
+    width: 100%;
+}
+.box{
+    width: 80% !important;
+    
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column  ;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+    height: 10vh;
+}
+
+/*----------------------about us------------------*/
+
+
+
+#about{
+    background: white   ;
+}
+#about img{
+    padding: 100px 0px 100px 100px;
+}
+#about h1{
+    font-weight: 800;
+    font-size: 30px;
+}
+#about .ul {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+ .fa-facebook{
+     color: blue;
+     font-size: 30px;
+     box-sizing: border-box;
+     padding-right: 10px;
+     
+     text-align: center;
+} 
+.fa-facebook:hover{
+    color: black;
+}
+ .fa-youtube{
+     color: blue;
+     font-size: 30px;
+     padding-right: 10px;
+
+ }
+ .fa-youtube:hover{
+    color: black;
+}
+ .fa-linkedin{
+    color: blue;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.fa-linkedin:hover{
+    color: black;
+}
+.fa-instagram{
+    color: blue;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.fa-instagram:hover{
+    color: black;
+}
+
+/*----------------------------contact------------------*/
+#contact{
+    height: 100vh;
+    width: 100%;
+}
+#contact img{
+    height: 100%;
+    width: 100%;
+}
+.box{
+    width: 80% !important;
+    
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column  ;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+    height: 30vh;
+}
+
+
+/*-------------------------------footer------------------*/
+
+
+footer{
+    width: 100%;
+    height: 30px;
+    background: black;
+    margin-top: -30px;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}

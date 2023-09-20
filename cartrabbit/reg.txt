@@ -1,0 +1,52 @@
+<?php
+session_start();
+include("connection.php");
+include("function.php");
+
+if($_SERVER['REQUEST_METHOD'] == "POST")
+{
+     
+      $uname =$_POST['uname'];
+      $email =$_POST['email'];
+     
+      $pas1 =$_POST['pas1'];
+      $pas2 =$_POST['pas2'];
+     
+      if(!empty($uname) && !empty($email) && !empty($pas1) && !empty($pas2))
+      {
+        if($pas1 == $pas2){
+          $query = "SELECT * FROM register WHERE email= '$email' limit 1";
+          $result = mysqli_query($con, $query);
+          if(!$result->num_rows > 0){
+        $query = "INSERT INTO register  (uname, email, pas1, pas2) values('$uname', '$email', '$pas1', '$pas2')";
+          mysqli_query($con, $query);
+         if($result)
+         {
+          echo "<script>alert('user registration sucess')</script>";
+          header("Location: login.php");
+            
+             $uname = "";
+             $email = "";
+            
+             $pas1 = "";
+             $pas2 = "";
+            
+         }else{
+
+          echo "<script>alert('user registration denied.. Try after 1 min')</script>";
+          header("Location: login.php");
+         }
+        }else{
+          echo "<script>alert('email already exists')</script>";
+        }
+         }else{
+           echo "<script>alert('password is not matched')</script>";
+         }
+      } else{
+        echo "please enter some valid information!";
+      }
+
+}
+
+
+?>

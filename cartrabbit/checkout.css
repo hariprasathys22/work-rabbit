@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    background: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: violet !important;
+}
+#navbarSupportedContent a{
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid violet;
+}
+#navbarSupportedContent button{
+    background: violet;
+    width: 5rem;
+}
+
+/***************checkout**************/
+#checkout{
+    width: 100%;
+    height: 100vh;
+}
+#checkout .form-control{
+    padding: 10px 0px;
+}
+.form-control{ 
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    margin-top: 10px;
+    width: 80% !important;
+}
+#checkout input{
+    margin: 10px 0px;
+}
+#checkout ::placeholder{
+    padding-left: 10px;
+
+}
+
+/*-------------------------------footer------------------*/
+
+
+footer{
+    width: 100%;
+    height: 30px;
+    background: black;
+    margin-top: -30px;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}
